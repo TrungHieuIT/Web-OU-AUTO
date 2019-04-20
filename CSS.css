@@ -1,0 +1,561 @@
+@charset "utf-8";
+/* CSS Document */
+	body {
+		margin:0;
+		background-color:#000 !important;
+	}
+	a.on_top { 
+		opacity:0.6; 
+		display: none;
+		opacity:1;
+		}
+	a.on_top:hover{
+		background-color: #999;
+		color: #fff;
+		border: 1px solid #007bb6;
+		opacity:1;
+		}
+	a.on_top i{ 
+		font-size: 30px;
+		color:red;}
+	a.on_top {
+		border-radius: 10px 0px 0px 10px;
+		background-color: #333333;
+		padding: 10px 20px;
+		white-space: nowrap; 
+		color: #fff;
+		position: fixed;
+		bottom: 75px;
+		right: 0px;
+		}
+/*-----------------------------------------------------------------CSS HEADER*/
+	div.container {
+		width:100%;
+		margin:0 auto;
+		
+	}
+	div.header {
+		margin:0 auto;
+		width:100%;
+		overflow:auto;
+		
+		padding-left:20px;
+	}
+	div.header > img{
+		margin:0 0 0 10px;
+		width:80px;
+		height:60px;
+		float:left;
+	}
+	div.header > div.text {
+		float:left;
+		padding:9px 0px 0px 0px;
+		margin:0;
+	}
+	p.topText {
+		 font-family:"UTM NguyenHa 01";
+		 font-weight:200 ;
+		 padding:0 0 0 10px;
+		 margin:0;
+		 font-size:15px;
+		 color:#FFF;
+	}
+	p.bottomText{
+		font-family:"Comic Sans MS", cursive;
+		font-size:14px;
+		padding:0 0 0 10px;
+		margin:0;
+		color:#FFF;
+	}
+	form {
+		text-align:center;
+	}
+	form > button{
+		font-family:"UVN Ban Tay";
+		font-size:18px;
+		font-weight:600; 	
+		width:100px;
+		height:35px;
+		background-color:#C8102E;
+		border:0;
+		border-radius:10px 0px 0px 10px;
+		margin:5px 0 0 0;
+	}
+	form > button#btFeedback {
+		border-radius:0px 10px 10px 0px ;
+		margin:0;
+		width:70px;
+		height:30px;
+	}
+	form > button > a {
+		color:#FFF;
+		text-decoration:none;
+		display:block;
+		margin:0;
+		padding:0;
+	}
+	form button > a:hover {
+		color:#000;
+	}
+	form  div  > input {
+		margin:8px 5px 0 0 ;
+		width:25%;
+		height:25px;	
+		border-radius:10px ;
+		background-color:#CCC;
+		border:1px solid #000;
+		float:left;
+		margin-left:100px;
+	}
+	form  div > i {
+		position:absolute;
+		left:720px;
+		top:15px;
+		color:#666;
+		
+	}
+	form > input:hover {
+		border:0.5px;
+		background-color:#CCC;
+		
+	}
+<!----------------------------------------------------------------------CSS MENU-->
+	div.menu {
+		border:2 solid blue;
+		overflow:auto;
+		width:100%;
+		margin:0 auto;
+	}
+	div.position {
+		position:fixed;
+		left:0px;
+		right:0px;
+		top:0px;
+		padding-bottom:5px;
+		background-image:url(Image/Header.jpg);
+	}
+	div.menu > ul{
+		width:100%;
+		margin:0;
+		text-align:center;
+		list-style-type:none;
+		overflow:auto;
+		text-align:center; 
+		
+	}
+	div.menu > ul > li{
+		float:left;
+		padding:5px 60px ;
+		margin:0 10px 0 10px;
+		text-align:center;
+		border-radius:0px 0px 5px 5px;
+		border-left:1px solid #999;
+		border-right:1px solid #999;
+		border-bottom:1px solid #999;
+		background-color:#000;
+	}
+	div.menu > ul > li:first-child{
+		border-right:1px solid #999;
+		padding:5px 30px !important ;
+	}
+	div.menu > ul > li .itemmenu {
+		text-decoration:none;
+		padding:0;
+		display:block;
+		color:#FFF;
+		font-family:"UTM BryantLG";
+		font-weight:1000;
+		font-size:18px;
+	}
+	div.menu > ul > li .itemmenu:hover {
+		color:#C8102E;
+		font-weight:700;
+	}
+	ul.subcontent{
+		display:none;
+		list-style-type:none;
+		border-radius:10px 0 10px 0	 ;
+		background-color:#FFF;
+		margin-top:8px;
+		padding:0px;
+		border:1px solid #999;
+	}
+	ul.subcontent > li {
+		text-align:left !important;
+	}
+	ul.subcontent > li > a {
+		display:block !important;
+		text-decoration:none;
+		color:#000;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		padding:5px;
+	}
+	li.submenu:hover ul.subcontent{
+		display:block;
+		position:absolute;
+	}
+	ul.subcontent li ul.logoCar {
+		list-style-type:none;
+		overflow:auto;
+		padding:0px;
+	}
+	ul.subcontent li ul.logoCar > li {
+		float:left;
+		padding:5px;
+	}
+	ul.subcontent li ul.logoCar > li a img:hover {
+		width:80px;
+		height:70px
+	}
+	ul.subcontent li ul.logoCar li a > img {
+		width:70px;
+		height:60px;
+	}
+	ul.subcontent li ul.typeCar {
+		list-style-type:none;
+		overflow:auto;
+		padding:5px;
+	}
+	ul.subcontent li ul.typeCar li {
+		float:left;
+	}
+	ul.subcontent li ul.typeCar li a {
+		text-decoration:none;
+		display:block;
+		padding:0;
+	}
+	ul.subcontent li ul.typeCar li a > p {
+		font-size:12px !important;
+		padding:0;
+		text-align:center;
+		margin:0;
+		color:#333;
+		font-family:"UTM Banque";
+	}
+	ul.subcontent li ul.typeCar li a > img {
+		width:80px;
+		height:50px;
+		padding:0;
+		margin:0;
+	}
+	ul.subcontent li ul.typeCar li a > img:hover {
+		width:90px;
+		height:60px;
+	}
+	ul.subcontent li ul.typeCar > p 
+<!--CSS POSTER-->
+/*
+	@keyframes blink {
+		30%{background-image:url(Image/lance-asper-259085-unsplash.jpg);}
+		50%{background-image:url(Image/2016-civic-turbo-black-front-racing.jpg);}
+		50%{background-image:url(Image/lexus-rx-450h-2016-21.jpg);}
+		40%{background-image:url(Image/2018_vision_mercedes_maybach_6_cabriolet_4k-1280x720.jpg);}
+	}
+*/
+<!----------------------------------------------------------------------------CSS POSTER-->
+	div.poster {
+		/*
+		animation:blink 20s infinite;
+		*/
+		background-size:1300px 600px;
+		margin-top:10px;
+		border:0;
+		padding-top:15px;
+		width:100%;
+		height:500px;
+	}
+	div.poster > img {
+		width:100%;
+		height:500px;
+	}
+<!----------------------------------------------------------------------------BODY FIRST-->
+	div.body-first {
+		background-color:#F4F4F4 !important;
+		overflow:auto;
+	}
+/*-----------BODY-FIRST LEFT*/
+	div.body-first > div.Left {
+		float:left;
+		width:18%;
+		height:665px;
+		border:1px solid red;
+	}
+	div.Left ul {
+		padding-left:10px;
+		list-style-type:none;
+	}
+	div.Left ul > p {
+		border-bottom:1px solid #C8102E;
+		border-radius:0px 0px 10px 10px;
+		width:200px;
+		font-family:"UVN Van";
+		font-weight:550;
+		color:#C8102E;
+		padding:0px 0px 5px 0px;
+		margin:0px 0px 40px 0px ;
+	}
+	div.Left ul p > img {
+		width:60px;
+		height:40px;
+	}
+	ul.subcontent2 {
+		float:left;
+		overflow:auto;
+		border-radius:0px 10px 10px 0px;
+		border:2px solid #C8102E;
+		padding:0;
+		padding-left:40%;
+		display:none;
+		margin:0px 0px 0px 200px !important ;
+	}
+	ul.subcontent2 > li {
+		list-style-type:none;	
+	}
+	ul.itemcar {
+		padding:0;
+		margin:0;
+	}
+	ul.subcontent2 li ul.itemcar > li {
+		list-style-type:none;
+		float:left;
+	}
+	ul.subcontent2 li ul.itemcar li a > img {
+		width:90px;
+		height:50px;
+		padding:5px;
+	}
+	ul.subcontent2 li ul.itemcar li a > img:hover {
+		width:100px;
+		height:60px;
+	}
+	li.submenu2{
+		border-bottom:1px solid #999;
+		height:40px;
+		width:200px;
+		background-color:#C8102E;
+		border-radius:3px 3px 0px 0px;
+		padding:0px;
+	}
+	li.submenu2 > span {
+		font-size:12px;
+		font-family:"UTM Nokia";
+		padding-top:10px;
+		display:block;
+		color:#CCC;
+		text-align:center;
+		border-radius:3px 3px 0px 0px;
+		
+	}
+	li.submenu2 > span:hover {
+		color:#333;
+	}
+	li.submenu2:hover ul.subcontent2{
+		display:block;
+		position:absolute;
+	}
+	ul.subcontent2 {
+		background-color:#FFF;
+		border-radius:3px 3px 0px 0px;
+		margin-left:200px;
+		margin-top:10px;
+	}
+	
+/*-----------BODY-FIRST RIGHT*/
+	div.body-first > div.Right {
+		margin:0;
+		float:right;
+		width:81%;
+		height: 660px;
+		border-top:1px solid #C8102E;
+	}
+	
+	div.title {
+		margin:0;
+		display:inline-block;
+		border-top:1px solid #C8102E;
+		border-bottom:1px solid #C8102E;
+		border-radius:0px 10px 10px 0px;
+		text-align:center;
+		margin:10px;
+		height:30px;
+		width:250px;
+		font-size:24px;
+		font-family:"UTM Iron Gothic";
+		color:#CCCCCC;
+	}
+	div.Right div.newCar {
+		overflow:auto;
+		margin-top:30px ;
+	}
+	/*LINE1*/
+	div.Right div.newCar div.line1 >img:first-child {
+		float:left;
+		width:450px;
+		height:300px;
+	}
+	div.Right div.newCar div.line1 >img:last-child {
+		width:550px;
+		height:300px;
+		margin-left:10px;
+	}
+	/*LINE2*/
+	div.Right div.newCar div.line2 >img:first-child {
+		float:left;
+		width:550px;
+		height:300px;
+	}
+	div.Right div.newCar div.line2 >img:last-child {
+		width:450px;
+		height:300px;
+		margin-left:10px;
+	}
+/*----------------------------------------------------------------------------BODY-SERVICE--*/
+	div.body-service {
+		clear:both;
+		overflow:auto;
+		padding-top:30px;
+	}
+	div.body-service div.support {
+		margin-left:7%;
+	}
+	div.body-service div.support > img {
+		float:left;
+		margin:10px 0px 10px 20px;
+		width:250px;
+		height:150px;
+	}
+	div.body-service div.support > img:hover {
+		width:270px;
+		height:170px;
+	}
+	div.body-service div.support > img:first-child {
+		padding-left:0px;
+		border-radius:10px 0px 0px 10px;
+	}
+	div.body-service div.support > img:last-child {
+		padding-right:0px;
+		border-radius:0px 10px 10px 0px;
+	}
+	
+/*----------------------------------------------------------------------------BODY-TECHNOLOGY*/
+	div.body-technology {
+		clear:both;
+		overflow:auto;
+		padding-top:30px;
+		border-bottom:1px solid #F00;
+		padding-bottom:30px;
+	}
+	div.body-technology div.technology {
+		margin-left:7%;
+	}
+	div.body-technology div.technology div.col > iframe {
+		pause:inherit;
+		float:left;
+		margin:10px 0px 10px 20px;
+		width:250px;
+		height:150px;
+	}
+/*----------------------------------------------------------------------------BODY-LAST*/
+	div.body-last{
+		margin-bottom:1%;
+		overflow:auto;
+	}
+	div.bdLeft {
+		width:40%;
+		float:left;
+	}
+	div.bdRight {
+		width:58%;
+		float:Right;
+	}
+	a {
+		display:block;
+		text-decoration:none;
+		color:#FFF;
+	}
+	a:hover {
+		display:block;
+		text-decoration:none;
+		color:#333;
+	}
+	button{
+		font-family:"UVN Ban Tay";
+		font-size:18px;
+		margin:10px 30px 10px 30px;
+		font-weight:600; 	
+		width:150px;
+		height:35px;
+		background-color:#C8102E;
+		border:0;
+		border-radius:5px;
+	}
+/*----------------------------------------------------------------------------BODY-LAST-LEFT*/
+	div.combobox > select {
+		width:60%;
+		height:30px;
+		margin:0 30px 0 30px;
+		height:30px;
+	}
+	div.combobox select > option {
+		font-family:"UVN Van";
+		font-size:16px;
+		color:#333;
+	}
+	div.combobox > p {
+		font-size:24px;
+		font-family:"UVN Anh Sang";
+		margin:10px 30px 10px 35px;
+		color:#FFF;
+	}
+/*----------------------------------------------------------------------------BODY-LAST-RIGHT*/
+	div.input > input {
+		width:60%;
+		height:30px;
+		margin:0 30px 0 30px;
+		height:30px;
+	}
+	div.input select > option {
+		font-family:"UVN Van";
+		font-size:16px;
+		color:#333;
+	}
+	div.input > p {
+		font-size:24px;
+		font-family:"UVN Anh Sang";
+		margin:10px 30px 10px 35px;
+		color:#FFF;
+	}
+/*----------------------------------------------------------------------------FOOTER*/
+	div.footer{
+		margin-bottom:1%;
+		overflow:auto;
+	}
+	div.ftLeft {
+		width:40%;
+		float:left;
+	}
+	div.ftRight {
+		width:58%;
+		float:Right;
+	}
+/*-------------FOOTER-LEFT*/
+	div.ftInfo > ul {
+		margin-top:10%;
+		list-style-type:none;
+	}
+	div.ftInfo > ul > li {
+		font-family:Arial, Helvetica, sans-serif;
+		padding-top:5px;
+		color:#CCC;
+		font-size:15px;
+	}
+	div.ftInfo > ul > li:first-child{
+		font-size:20px;
+		font-weight:500;
+	}
+/*-------------FOOTER-RIGHT*/
+	div.ftImage > img {
+		width:100%;
+		height:260px;
+	}

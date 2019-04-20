@@ -1,0 +1,495 @@
+@charset "utf-8";
+/* CSS Document */
+	body {
+		margin:0;
+		background-color:#000 !important;
+	}
+	a.on_top { 
+		opacity:0.6; 
+		display: none;
+		opacity:1;
+		}
+	a.on_top:hover{
+		background-color: #999;
+		color: #fff;
+		border: 1px solid #007bb6;
+		opacity:1;
+		}
+	a.on_top i{ 
+		font-size: 30px;
+		color:red;}
+	a.on_top {
+		border-radius: 10px 0px 0px 10px;
+		background-color: #CCCCCC;
+		padding: 10px 20px;
+		white-space: nowrap; 
+		color: #fff;
+		position: fixed;
+		bottom: 75px;
+		right: 0px;
+		}
+/*-----------------------------------------------------------------CSS HEADER*/
+	div.container {
+		width:100%;
+		margin:0 auto;
+		
+	}
+	div.header {
+		margin:0 auto;
+		width:100%;
+		overflow:auto;
+		
+		padding-left:20px;
+	}
+	div.header > img{
+		margin:0 0 0 10px;
+		width:80px;
+		height:60px;
+		float:left;
+	}
+	div.header > div.text {
+		float:left;
+		padding:9px 0px 0px 0px;
+		margin:0;
+	}
+	p.topText {
+		 font-family:"UTM NguyenHa 01";
+		 font-weight:200 ;
+		 padding:0 0 0 10px;
+		 margin:0;
+		 font-size:15px;
+		 color:#FFF;
+	}
+	p.bottomText{
+		font-family:"Comic Sans MS", cursive;
+		font-size:14px;
+		padding:0 0 0 10px;
+		margin:0;
+		color:#FFF;
+	}
+	form {
+		text-align:center;
+	}
+	form > button{
+		font-family:"UVN Ban Tay";
+		font-size:18px;
+		font-weight:600; 	
+		width:100px;
+		height:35px;
+		background-color:#C8102E;
+		border:0;
+		border-radius:10px 0px 0px 10px;
+		margin:5px 0 0 0;
+	}
+	form > button#btFeedback {
+		border-radius:0px 10px 10px 0px ;
+		margin:0;
+		width:70px;
+		height:30px;
+	}
+	form > button > a {
+		color:#FFF;
+		text-decoration:none;
+		display:block;
+		margin:0;
+		padding:0;
+	}
+	form button > a:hover {
+		color:#000;
+	}
+	form  div  > input {
+		margin:8px 5px 0 0 ;
+		width:25%;
+		height:25px;	
+		border-radius:10px ;
+		background-color:#CCC;
+		border:1px solid #000;
+		float:left;
+		margin-left:100px;
+	}
+	form  div > i {
+		position:absolute;
+		left:720px;
+		top:15px;
+		color:#666;
+		
+	}
+	form > input:hover {
+		border:0.5px;
+		background-color:#CCC;
+		
+	}
+<!----------------------------------------------------------------------CSS MENU-->
+	div.menu {
+		border:2 solid blue;
+		overflow:auto;
+		width:100%;
+		margin:0 auto;
+	}
+	div.position {
+		position:fixed;
+		left:0px;
+		right:0px;
+		top:0px;
+		padding-bottom:5px;
+		background-image:url(Image/Header.jpg);
+	}
+	div.menu > ul{
+		width:100%;
+		margin:0;
+		text-align:center;
+		list-style-type:none;
+		overflow:auto;
+		text-align:center; 
+		
+	}
+	div.menu > ul > li{
+		float:left;
+		padding:5px 60px ;
+		margin:0 10px 0 10px;
+		text-align:center;
+		border-radius:0px 0px 5px 5px;
+		border-left:1px solid #999;
+		border-right:1px solid #999;
+		border-bottom:1px solid #999;
+		background-color:#000;
+	}
+	div.menu > ul > li:first-child{
+		border-right:1px solid #999;
+		padding:5px 30px !important ;
+	}
+	div.menu > ul > li .itemmenu {
+		text-decoration:none;
+		padding:0;
+		display:block;
+		color:#FFF;
+		font-family:"UTM BryantLG";
+		font-weight:1000;
+		font-size:18px;
+	}
+	div.menu > ul > li .itemmenu:hover {
+		color:#C8102E;
+		font-weight:700;
+	}
+	ul.subcontent{
+		display:none;
+		list-style-type:none;
+		border-radius:10px 0 10px 0	 ;
+		background-color:#FFF;
+		margin-top:8px;
+		padding:0px;
+		border:1px solid #999;
+	}
+	ul.subcontent > li {
+		text-align:left !important;
+	}
+	ul.subcontent > li > a {
+		display:block !important;
+		text-decoration:none;
+		color:#000;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		padding:5px;
+	}
+	li.submenu:hover ul.subcontent{
+		display:block;
+		position:absolute;
+	}
+	ul.subcontent li ul.logoCar {
+		list-style-type:none;
+		overflow:auto;
+		padding:0px;
+	}
+	ul.subcontent li ul.logoCar > li {
+		float:left;
+		padding:5px;
+	}
+	ul.subcontent li ul.logoCar > li a img:hover {
+		width:80px;
+		height:70px
+	}
+	ul.subcontent li ul.logoCar li a > img {
+		width:70px;
+		height:60px;
+	}
+	ul.subcontent li ul.typeCar {
+		list-style-type:none;
+		overflow:auto;
+		padding:5px;
+	}
+	ul.subcontent li ul.typeCar li {
+		float:left;
+	}
+	ul.subcontent li ul.typeCar li a {
+		text-decoration:none;
+		display:block;
+		padding:0;
+	}
+	ul.subcontent li ul.typeCar li a > p {
+		font-size:12px !important;
+		padding:0;
+		text-align:center;
+		margin:0;
+		color:#333;
+		font-family:"UTM Banque";
+	}
+	ul.subcontent li ul.typeCar li a > img {
+		width:80px;
+		height:50px;
+		padding:0;
+		margin:0;
+	}
+	ul.subcontent li ul.typeCar li a > img:hover {
+		width:90px;
+		height:60px;
+	}
+	ul.subcontent li ul.typeCar > p 
+<!------------------------------------------------------------------------CSS POSTER-->
+	div.poster {
+		/*
+		animation:blink 20s infinite;
+		*/
+		background-size:1300px 600px;
+		margin-top:10px;
+		border:0;
+		padding-top:15px;
+		width:100%;
+		height:400px;
+	}
+	div.poster > img {
+		width:100%;
+		height:400px;
+	}
+
+/*----------------------------------------------------------------------------BODY*/
+	div.bodyService {
+		margin-top:10%;
+		background-color:#F4F4F4;
+		overflow:auto;
+	}
+	div.line > hr {
+		margin-top:20px;
+		width:80%;
+		font-size:9px;
+	}
+	div.line > p {
+		border-bottom:1px solid #C8102E;
+		border-radius:0px 0px 10px 10px;
+		border-left:1px solid #666;
+		border-right:1px solid #666;
+		border-bottom:1px solid #666;
+		width:250px;
+		height:30px;
+		background-color:#C8102E;
+		font-family:"UTM Banque";
+		font-weight:550;
+		color:#FFF;
+		padding:5px 5px;
+		margin:0 auto ;
+		text-align:center;
+	}
+	div.saleContent {
+		background-color:#F4F4F4;
+		width:90%;
+		margin:0 auto;
+		padding:5px;
+		
+	}
+	div.line {
+		overflow:hidden;
+		padding:10px 0px;
+		margin-left:2%;
+	}
+	div.content {
+		float:left;
+		background-color:#FFF;
+		border:1px solid #CCC;
+		width:330px;
+		height:350px;
+		padding:5px;
+		margin-right:5px;
+		margin:5px 5px;
+	}
+	div.content > div.tag > img {
+		height:50px;
+		width:150px;
+	}
+	div.content div.img a >  img {
+		width:330px;
+		height:180px;
+	}
+	ul.thongtin {
+		margin :5px;
+		list-style-type:none;
+		padding:0;
+	}
+	div.content div.title ul.thongtin > li {
+		padding:3px 0px;
+	}
+	ul.thongSo {
+		margin:0px;
+		margin-left:5px;
+		list-style-type:disc;
+	}
+	ul.thongSo > li{
+		font-size:14px !important;
+		font-weight:bold;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		
+	}
+	ul.thongtin  > li:first-child{
+		font-size:22px;
+		font-weight:700;
+		font-family:"UTM Banque";
+	}
+	ul.thongtin  > li:nth-child(2) {
+		font-size:16px;
+		font-weight:bold;
+		opacity:0.6;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+/*----------------------------------------------------------------------------FOOTER*/
+	div.footer{
+		clear:both;
+		margin-bottom:1%;
+		overflow:hidden;
+		background-color:#000;
+	}
+	div.ftLeft {
+		width:40%;
+		float:left;
+	}
+	div.ftRight {
+		width:58%;
+		float:Right;
+	}
+/*-------------FOOTER-LEFT*/
+	div.ftInfo > ul {
+		margin-top:10%;
+		list-style-type:none;
+	}
+	div.ftInfo > ul > li {
+		font-family:Arial, Helvetica, sans-serif;
+		padding-top:5px;
+		color:#CCC;
+		font-size:15px;
+	}
+	div.ftInfo > ul > li > img {
+		width:150px;
+		height:60px;
+	}
+	div.ftInfo > ul > li:first-child{
+		font-size:20px;
+		font-weight:500;
+	}
+/*-------------FOOTER-RIGHT*/
+	div.ftImage > img {
+		width:100% ;
+		height:260px ;
+	}
+	
+/*-------------SLIDE*/
+	.Slide.active {
+    background-color:#F4F4F4;
+}
+	
+	
+	
+	div.khoi-Slide {
+		position:relative;
+		background-color:#FFF;
+	}
+	div.cac-Slide{
+		overflow:hidden;
+	}
+	div.Slide {
+		width:100%;
+		height:180px;
+		padding-left:30px;
+	}
+	div.Slide a > img {
+		width:240px;
+		height:150px;
+		float:left;
+	}
+	div.Slide a > img:hover {
+		margin-top:20px;
+	}
+	div.Slide a > img {
+		margin:0px 40px 0px 20px;
+	}
+	div.Slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+	}
+	div.Slide.active {
+		opacity:1;
+		visibility:visible;
+	}
+	/*BUTTON*/
+	i#btnLeftId {
+    font-size: 50px;
+    opacity: 0.3;
+    position:relative;
+    left: 5px;
+
+    top: 40px;
+}
+	i#btnRightId{
+    font-size: 50px;
+    opacity: 0.3;
+    position:relative;
+	left:95%;
+    top: 50px;
+}
+	
+	
+	/*NÚT BACK*/
+	.bien-mat-ben-trai{
+		animation: bien-mat-ben-trai 1s forwards ;
+	}
+	@keyframes bien-mat-ben-trai {
+		from {
+			transform: translateX(0%);
+			}
+		to {
+			transform:translateX(-100%);
+			}
+	}
+	
+	.di-vao-ben-phai{
+		animation: di-vao-ben-phai 1s forwards ;
+	}
+	@-webkit-keyframes di-vao-ben-phai {
+		from {
+			transform: translateX(100%);
+			}
+		to {
+			transform:translateX(0%);
+			}
+	}
+		/*NÚT NEXT*/
+	.bien-mat-ben-phai{
+		animation: bien-mat-ben-phai 1s forwards;
+	}
+	@-webkit-keyframes bien-mat-ben-phai{
+		from{
+			transform: translateX(0%);
+		}
+		to{
+			transform: translateX(100%);
+		}
+	}
+	.di-vao-ben-trai{
+		animation: di-vao-ben-trai 1s forwards;
+	}
+	@-webkit-keyframes di-vao-ben-trai{
+		from{
+			transform: translateX(-100%);
+		}
+		to{
+			transform: translateX(0%);
+		}

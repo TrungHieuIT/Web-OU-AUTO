@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LOGIN</title>
+<style>
+	div.header {
+		text-align:center;
+	}
+	div.header > img {
+		margin-top:50px;
+		width:70px;
+		height:70px;
+	}
+	div.header > p {
+		margin:10px 0px 10px 0px ;
+		font-family:"Comic Sans MS", cursive;
+		font-size:20px;
+		font-weight:600;
+	}
+	div.header > h2 {
+		margin:0px 0px 50px 0px ;
+		font-family:"Comic Sans MS", cursive;
+		font-size:15px;
+	}
+	div.body ul li > button > a {
+		color:#FFF;
+	}
+	div.body  a {
+		text-decoration:none;
+		color:blue;
+	}
+	div.body {
+		text-align:center;
+	}
+	div.body form > ul {
+		list-style-type:none;
+	}
+	div.body form ul li > button {
+		width:600px;
+		height:35px;
+		background-color:#4267B2;
+		border:1px solid #333;
+		border-radius:5px;
+	}
+	div.body form ul li > button#btLogin{
+		margin:30px 0px 30px 0;
+		background-color:#333;
+	}
+	div.body form ul li > button#btLogin > a {
+		font-family:"Comic Sans MS", cursive;
+		font-weight:500;
+		font-size:18px;
+	}
+	div.body form ul > hr {
+		margin-top:30px;
+		width:60%;
+		text-align:center;
+	}
+	
+	form ul li:nth-child(4) > button{
+		border-bottom-color:red !important;
+	}
+	form ul li > input {
+		color:#333;
+		font-family:"Comic Sans MS", cursive;
+		width:530px;
+		height:35px;
+		border-radius:5px;
+		border:1px solid #333;
+		margin-top:30px;
+	}
+	
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+    <img src="Image/iconfinder_music-album_3671818 (2).png" alt="ICON"/>
+    <p>LOGIN</p>
+    <h2>Welcome to DenO Music.</h2>
+    </div>
+    <div class="body">
+    	<form>
+    	<ul>
+        	<li><button><a href="https://www.facebook.com/">Login with Facebook</a></button></li>
+            <hr>
+            <li>UserName :&nbsp;<input type="text"/></li>
+            <li>PassWord :&nbsp;<input type="text"/></li>
+            <li><button id="btLogin"><a href="#">Login</a></button></li>
+            <li>Did you <a href="#">forget</a>?</li>
+        </ul>
+        </form>
+    </div>
+    <div class="footer">
+    </div>
+</div>
+</body>
+</html>
